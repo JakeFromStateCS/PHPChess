@@ -1,0 +1,14 @@
+{
+  "require": {
+    "doctrine/orm": "*",
+    "mjphaynes/php-resque": "2.1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPChess\\": "PHPChess/Classes"
+    }
+  }
+}
