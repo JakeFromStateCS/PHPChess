@@ -8,7 +8,8 @@ use PHPChess\Enum\Constants;
 use PHPChess\Game\Board\Board;
 use PHPChess\Util\Vector2D;
 
-class Pawn extends ChessPiece {
+class Pawn extends ChessPiece
+{
     private Vector2D $forwardDirection;
 
     public function __construct(Board $board, int $team = 0)

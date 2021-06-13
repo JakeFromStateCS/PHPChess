@@ -7,12 +7,13 @@ namespace PHPChess\Game\Pieces;
 use PHPChess\Game\Board\Board;
 use PHPChess\Util\Vector2D;
 
-abstract class ChessPiece {
+abstract class ChessPiece
+{
     private Vector2D $position;
     // Track the total number of moves. Specifically useful for kings and pawns
     private int $moveCount = 0;
 
-    public function __construct(private Board $board, private int $team = 0)
+    public function __construct(protected Board $board, private int $team = 0)
     {
         $this->position = new Vector2D(1, 1);
     }

@@ -18,4 +18,4 @@ $board = new Board();
 //$piece->move(new Vector2D(3, 7));
 //$board->exportBoardState();
 (new FENStateImporter($board))->importState('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1');
-var_dump($board->exportBoardState());
+var_dump($board->exportState());

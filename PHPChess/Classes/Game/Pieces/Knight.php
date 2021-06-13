@@ -6,7 +6,8 @@ namespace PHPChess\Game\Pieces;
 
 use PHPChess\Game\Board\Board;
 
-class Knight extends ChessPiece {
+class Knight extends ChessPiece
+{
     public function __construct(Board $board, int $team = 0)
     {
         parent::__construct($board, $team);

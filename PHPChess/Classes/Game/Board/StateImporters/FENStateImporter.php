@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PHPChess\Game\Board\StateImporters;
 
+use PHPChess\Enum\Constants;
 use PHPChess\Game\Pieces\Bishop;
 use PHPChess\Game\Pieces\ChessPiece;
 use PHPChess\Game\Pieces\King;
@@ -53,6 +54,8 @@ final class FENStateImporter extends BoardStateImporter
                 /** @var ChessPiece $piece */
                 $piece = new $this->pieceCharacterMap[$pieceCharacterUpper]($this->board);
                 $piece->setPosition($position);
+                // If it's lowercase it's dark
+                $piece->setTeam(ctype_lower($pieceCharacter) ? Constants::TEAM_DARK : Constants::TEAM_LIGHT);
             }
         }
     }
