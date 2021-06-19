@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PHPChess\Util;
+namespace PHPChess\Util\Spacial;
 
 use JetBrains\PhpStorm\Pure;
 

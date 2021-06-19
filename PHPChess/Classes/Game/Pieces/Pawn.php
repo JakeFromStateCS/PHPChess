@@ -6,7 +6,7 @@ namespace PHPChess\Game\Pieces;
 
 use PHPChess\Enum\Constants;
 use PHPChess\Game\Board\Board;
-use PHPChess\Util\Vector2D;
+use PHPChess\Util\Spacial\Vector2D;
 
 class Pawn extends ChessPiece
 {

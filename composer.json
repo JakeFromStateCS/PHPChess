@@ -1,14 +1,30 @@
 {
   "require": {
     "doctrine/orm": "*",
-    "mjphaynes/php-resque": "2.1.*"
+    "mjphaynes/php-resque": "2.1.*",
+    "symfony/dotenv": "*",
+    "webmozart/assert": "*",
+    "ext-redis": "*",
+    "ext-pdo": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "*"
+    "phpunit/phpunit": "*",
+    "symfony/var-dumper": "*"
   },
   "autoload": {
     "psr-4": {
       "PHPChess\\": "PHPChess/Classes"
-    }
+    },
+    "files": [
+      "PHPChess/init.php"
+    ]
+  },
+  "scripts": {
+    "drop-database": "php /var/www/html/Scripts/Development/Doctrine.php orm:schema-tool:drop --force",
+    "create-database": "php /var/www/html/Scripts/Development/Doctrine.php orm:schema-tool:update --force",
+    "generate-schema": [
+      "composer drop-database",
+      "composer create-database"
+    ]
   }
 }

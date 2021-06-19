@@ -8,8 +8,8 @@ use PHPChess\Game\Board\StateExporters\PrintStateExporter;
 use PHPChess\Game\Board\StateImporters\BoardStateImporter;
 use PHPChess\Game\Board\StateImporters\FENStateImporter;
 use PHPChess\Game\Pieces\ChessPiece;
-use PHPChess\Util\Dimension2D;
-use PHPChess\Util\Vector2D;
+use PHPChess\Util\Spacial\Dimension2D;
+use PHPChess\Util\Spacial\Vector2D;
 
 final class Board
 {

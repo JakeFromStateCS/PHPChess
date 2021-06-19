@@ -12,7 +12,7 @@ use PHPChess\Game\Pieces\Knight;
 use PHPChess\Game\Pieces\Pawn;
 use PHPChess\Game\Pieces\Queen;
 use PHPChess\Game\Pieces\Rook;
-use PHPChess\Util\Vector2D;
+use PHPChess\Util\Spacial\Vector2D;
 
 final class FENStateImporter extends BoardStateImporter
 {
