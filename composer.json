@@ -19,6 +19,15 @@
       "PHPChess/init.php"
     ]
   },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPChess\\Tests\\": "PHPChess/Tests/Classes",
+      "PHPChess\\Tests\\Framework\\": "PHPChess/Tests/Framework/Classes"
+    },
+    "files": [
+      "PHPChess/init.php"
+    ]
+  },
   "scripts": {
     "drop-database": "php /var/www/html/Scripts/Development/Doctrine.php orm:schema-tool:drop --force",
     "create-database": "php /var/www/html/Scripts/Development/Doctrine.php orm:schema-tool:update --force",

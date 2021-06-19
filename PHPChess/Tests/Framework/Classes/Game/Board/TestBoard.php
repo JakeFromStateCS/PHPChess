@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PHPChess\Framework\Classes\Game\Board;
+namespace PHPChess\Tests\Framework\Game\Board;
 
 use PHPChess\Game\Board\Board;
 

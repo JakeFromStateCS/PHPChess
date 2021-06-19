@@ -6,7 +6,7 @@ namespace PHPChess\Util\Resque;
 
 abstract class BaseResqueJob
 {
-    final public function __construct(protected array $args)
+    final public function __construct(protected array $args = [])
     {
     }
 

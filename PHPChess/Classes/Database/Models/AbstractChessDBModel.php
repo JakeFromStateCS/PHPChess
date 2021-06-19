@@ -9,7 +9,7 @@ use PHPChess\Util\Database\AbstractDoctrineDB;
 
 abstract class AbstractChessDBModel extends AbstractModel
 {
-    public function getDatabase(): AbstractDoctrineDB
+    public static function getDatabase(): AbstractDoctrineDB
     {
         return new ChessDB();
     }

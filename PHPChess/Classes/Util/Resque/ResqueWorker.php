@@ -14,13 +14,18 @@ final class ResqueWorker
     {
         $this->worker = new Worker($queue, $blocking);
         $this->worker->setInterval($interval);
-        $this->worker->setInterval($interval);
         $this->worker->setTimeout($timeout);
         $this->worker->setMemoryLimit($memory);
+        $this->worker->setLogger(new ResqueLogger([]));
     }
 
     public function run(): void
     {
         $this->worker->work();
+    }
+
+    public function shutDown(): void
+    {
+        $this->worker->shutdown();
     }
 }
