@@ -5,7 +5,8 @@
     "symfony/dotenv": "*",
     "webmozart/assert": "*",
     "ext-redis": "*",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "php-decimal/php-decimal": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "*",
@@ -34,6 +35,7 @@
     "generate-schema": [
       "composer drop-database",
       "composer create-database"
-    ]
+    ],
+    "update-ignore": "composer update --ignore-platform-reqs"
   }
 }
